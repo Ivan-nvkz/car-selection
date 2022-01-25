@@ -1,0 +1,1487 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Подбор автомобилей</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;700;800&display=swap" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@800&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="css/swiper-bundle.min.css">
+   <link rel="stylesheet" href="css/choices.min.css">
+   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin="" />
+   <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+
+   <div class="wrapper">
+      <header class="header">
+         <div class="header__inner">
+            <div class="container">
+               <div class="header__info">
+                  <button class="burger__btn burger__btn-line">
+                     <span class="burger-span"></span>
+                  </button>
+                  <a href="#" class="header__logo">
+                     <img src="images/logo.svg" alt="" class="logo__img">
+                  </a>
+                  <div class="header__info-box">
+                     <div class="header__top">
+                        <a href="#" class="header__logo header__logo-mobile ">
+                           <img src="images/logo.svg" alt="" class="logo__img logo__img-mobile">
+                        </a>
+                        <div class="phone__number">
+                           <a href="tel:88888888888" class="phone-number__link">
+                              +8 888 888 88 88
+                           </a>
+                        </div>
+                        <div class="social-block header__social-block">
+                           <div class="social__item">
+                              <a href="#" class="social__link">
+                                 <img src="images/icons/social-icons-faceboock.svg" alt="" class="social__img">
+                              </a>
+                           </div>
+                           <div class="social__item">
+                              <a href="#" class="social__link">
+                                 <img src="images/icons/social-icons-instagram.svg" alt="" class="social__img">
+                              </a>
+                           </div>
+                        </div>
+                        <a href="#application" class="btn-application">
+                           Оставить заявку
+                        </a>
+                     </div>
+                     <div class="menu__inner">
+                        <div class="btnUp">&uarr;</div>
+                        <nav class="menu">
+                           <ul class="menu__list">
+                              <li class="menu__item">
+                                 <a href="#services" class="menu__link menu__link-active">
+                                    услуги
+                                 </a>
+                              </li>
+                              <li class="menu__item">
+                                 <a href="#stages" class="menu__link">
+                                    этапы работ
+                                 </a>
+                              </li>
+                              <li class="menu__item">
+                                 <a href="#guarantees" class="menu__link">
+                                    гарантии
+                                 </a>
+                              </li>
+                              <li class="menu__item">
+                                 <a href="#selected-cars" class="menu__link">
+                                    подобранные автомобили
+                                 </a>
+                              </li>
+                              <li class="menu__item">
+                                 <a href="#contacts" class="menu__link">
+                                    контакты
+                                 </a>
+                              </li>
+                           </ul>
+                        </nav>
+                     </div>
+                  </div>
+               </div>
+               <div class="header-slider">
+                  <div class="header__content">
+                     <div class="header__content-inner">
+                        <div class="content-title__container">
+                           <div class="header__content-title">
+                              индивидуальный подбор
+                              автомобиля
+                              <span class="header__content-subtitle">под ключ</span>
+                           </div>
+                           <div class="header__content-images">
+                              <img src="images/star.svg" alt="" class="header__content-img">
+                           </div>
+                        </div>
+                        <div class="header__content-box">
+                           <div class="content-box__description">
+                              <p class="description-text">
+                                 Профессиональный подбор лучших на рынке автомобилей с юридической и технической
+                                 гарантией
+                              </p>
+                              <ul class="description__items">
+                                 <li class="description__item">
+                                    Проводим полную диагностику автомобиля
+                                 </li>
+                                 <li class="description__item">
+                                    Снижаем стоимость продажи до 10%
+                                 </li>
+                                 <li class="description__item">
+                                    Среднее время автоподбора составляет 7-14 дней
+                                 </li>
+                                 <li class="description__item">
+                                    На КПП и двигатель даем гарантию 2 месяца
+                                 </li>
+                              </ul>
+                              <div class="pick-up">
+                                 <a href="#application" class="pick-up__btn">
+                                    Подобрать автомобиль
+                                 </a>
+                              </div>
+                           </div>
+                           <div class="content-box__images">
+                              <img src="images/auto.png" alt="" class="content-box__img">
+                              <div class="pick-up pick-up-mobile ">
+                                 <a href="#application" class="pick-up__btn">
+                                    Подобрать автомобиль
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="header__content">
+                     <div class="header__content-inner">
+                        <div class="content-title__container container-registration">
+                           <div class="header__content-title title-registration ">
+                              Помощь в <span class="header__content-subtitle">регистрации </span>автомобиля
+                              <span class="header__content-subtitle">под ключ </span> за
+                              <span class="header__content-subtitle"> 300 &#8381; </span>
+                           </div>
+                           <div class="header__content-images">
+                           </div>
+                        </div>
+                        <div class="header__content-box registration__content-box ">
+                           <div class="content-box__description  description-registration ">
+
+                              <ul class="description__items registration__items ">
+                                 <li class="description__item">
+                                    Заполнение и подача документов на регистрацию автомобиля в налоговой
+                                 </li>
+                                 <li class="description__item">
+                                    Заполнение и подача документов на регистрацию автомобиля в
+                                 </li>
+                                 <li class="description__item">
+                                    Экономия вашего времени. Мы все сделаем за Вас по доверенности
+                                 </li>
+                                 <li class="description__item">
+                                    Поможем и расскажем как правильно заплатить налог на покупку автомобиля
+                                 </li>
+                              </ul>
+                              <div class="pick-up">
+                                 <a href="#application" class="pick-up__btn">
+                                    Нужна помощь с регистрацией
+                                 </a>
+                              </div>
+                           </div>
+                           <div class="content-box__images images-registration">
+                              <img src="images/auto-registration.png" alt="" class="content-box__img registration-img ">
+                              <div class=" pick-up-registration   pick-up-mobile">
+                                 <a href="#application" class="pick-up__btn">
+                                    Нужна помощь с регистрацией
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="header__content">
+                     <div class="header__content-inner">
+                        <div class="content-title__container">
+                           <div class="header__content-title">
+                              Комплексная
+                              <span class="header__content-subtitle">химчистка</span>
+                              салона от
+                              <span class="header__content-subtitle">400 &#8381;</span>
+                           </div>
+                        </div>
+                        <div class="header__content-box">
+                           <div class="content-box__description">
+                              <p class="description-text">
+                                 Цена услуги завист от размера автомобиля и от степени загрязнения. В услугу комплексной
+                                 химчистки входит:
+                              </p>
+                              <ul class="description__items  clear__items">
+                                 <li class="description__item ">
+                                    Стирка всех видов
+                                    сидений и ремней безопасности
+                                 </li>
+                                 <li class="description__item">
+                                    Комплексная уборка пола, чистка потолка и мойка всех стёкол
+                                 </li>
+                                 <li class="description__item">
+                                    Чистка всех элементов салона автомобиля и наложение препарата, защищающего от
+                                    ультрафиолетовых лучей
+                                 </li>
+                              </ul>
+                              <div class="pick-up clear-up">
+                                 <a href="#application" class="pick-up__btn">
+                                    мне нужна химчистка
+                                 </a>
+                              </div>
+                           </div>
+                           <div class="content-box__images">
+                              <img src="images/auto-clear.png" alt="" class="content-box__img">
+                              <div class="pick-up pick-up-mobile ">
+                                 <a href="#application" class="pick-up__btn">
+                                    мне нужна химчистка
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="header__content">
+                     <div class="header__content-inner">
+                        <div class="content-title__container">
+                           <div class="header__content-title">
+                              Мойка
+                              <span class="header__content-subtitle">кузова</span>
+                              автомобиля
+                              <span class="header__content-subtitle">300 &#8381;</span>
+                           </div>
+                        </div>
+                        <div class="header__content-box">
+                           <div class="content-box__description">
+                              <p class="description-text">
+                                 Цена услуги завист от размера автомобиля и от степени загрязнения. В услугу комплексной
+                                 мойки кузова входит:
+                              </p>
+                              <ul class="description__items  ">
+
+                                 <li class="description__item">
+                                    Мойка кузова с шампунем , включая арки, пороги.
+                                 </li>
+                                 <li class="description__item">
+                                    Ополаскивание
+                                 </li>
+
+                                 <li class="description__item">
+                                    Пртирка на сухо кузова , порогов,
+                                    стекол автомобиля.
+                                    Полировка фар.
+                                 </li>
+                                 <li class="description__item">
+                                    Пропылесосивание багажника.
+                                 </li>
+                              </ul>
+                              <div class="pick-up clear-up">
+                                 <a href="#application" class="pick-up__btn">
+                                    мне нужна мойка кузова
+                                 </a>
+                              </div>
+                           </div>
+                           <div class="content-box__images">
+                              <img src="images/auto-clear-car-body.png" alt="" class="content-box__img">
+                              <div class=" pick-up  pick-up-mobile">
+                                 <a href="#application" class="pick-up__btn">
+                                    мне нужна мойка кузова
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="header__content insurance__content">
+                     <div class="header__content-inner">
+                        <div class="content-title__container">
+                           <div class="header__content-title   insurance__content-title ">
+                              Оформление
+                              <span class="header__content-subtitle">автоСтрахования</span>
+                              при заказе любой услуги
+                           </div>
+                        </div>
+                        <div class="header__content-box">
+                           <div class="content-box__description">
+                              <p class="description-text  insurance__text">
+                                 Профессиональный подбор лучших на рынке автомобилей с юридической и технической
+                                 гарантией
+                              </p>
+                              <ul class="description__items">
+                                 <li class="description__item">
+                                    Проводим полную диагностику автомобиля
+                                 </li>
+                                 <li class="description__item">
+                                    Снижаем стоимость продажи до 20%
+                                 </li>
+                                 <li class="description__item">
+                                    Среднее время автоподбора составляет 7-14 дней
+                                 </li>
+                                 <li class="description__item">
+                                    На КПП и двигатель даем гарантию 2 месяца
+                                 </li>
+                              </ul>
+                              <div class="pick-up">
+                                 <a href="#application" class="pick-up__btn">
+                                    Подобрать автомобиль
+                                 </a>
+                              </div>
+                           </div>
+                           <div class="content-box__images">
+                              <img src="images/auto-insurance.png" alt="" class="content-box__img">
+                              <div class=" pick-up  pick-up-mobile">
+                                 <a href="#application" class="pick-up__btn">
+                                    Подобрать автомобиль
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+
+      <main class="main">
+
+
+         <section class="services" id="services">
+            <div class="container">
+               <div class="services__inner">
+                  <div class="title-block title-block__services">
+                     <h3 class="sub-title">
+                        Что мы делаем
+                     </h3>
+                     <h2 class="title">
+                        Наши услуги
+                     </h2>
+                  </div>
+                  <div class="diagnostics">
+                     <ul class="diagnostics-items">
+                        <li class="diagnostics-item">
+                           <div class="item__number-box">
+                              <div class="item__number">
+                                 <span class="number__smol">0</span>
+                                 <span class="number__big">1</span>
+                              </div>
+                              <img src="images/servises-auto-1.png" alt="" class="item__number-img">
+                           </div>
+                           <div class="item__info-box">
+                              <div class="info-box__title">
+                                 Выездная диагностика одного автомобиля
+                              </div>
+                              <div class="info-box__text">
+                                 <p class="info-text">
+                                    Проверка автомобиля по 100
+                                    параметрам
+                                 </p>
+                                 <p class="info-text">
+                                    Оценка стоимости автомобиля
+                                 </p>
+                                 <p class="info-text">
+                                    Диагностический лист на фирменном бланке
+                                 </p>
+                                 <p class="info-text">
+                                    Аргументированный торг с продавцом
+                                 </p>
+                                 <p class="info-text">
+                                    Экспертная оценка целесообразности покупки
+                                 </p>
+                              </div>
+                           </div>
+                           <div class="item__price-box">
+                              <span class="price-text">от</span>
+                              <p class="price-number">350</p>
+                              <span class="price-text">&#8381;</span>
+                           </div>
+                           <div class="pick-up pick-up-price ">
+                              <a href="#" class="pick-up__btn">
+                                 Подобрать автомобиль
+                              </a>
+                           </div>
+                           <div class="price-description">
+                              *окончательная цена услуги зависит от стоимости автомобиля
+                           </div>
+                        </li>
+                        <li class="diagnostics-item">
+                           <div class="item__number-box">
+                              <div class="item__number">
+                                 <span class="number__smol">0</span>
+                                 <span class="number__big">2</span>
+                              </div>
+                              <img src="images/servises-auto-2.png" alt="" class="item__number-img">
+                           </div>
+                           <div class="item__info-box">
+                              <div class="info-box__title">
+                                 Автодиагностика
+                                 на весь день
+                              </div>
+                              <div class="info-box__text">
+                                 <p class="info-text">
+                                    Советы по выбору объявлений
+                                 </p>
+                                 <p class="info-text">
+                                    Неограниченное количество автомобилей в течение дня
+                                 </p>
+                                 <p class="info-text">
+                                    Перемещение на автомобиле эксперта
+                                 </p>
+                                 <p class="info-text">
+                                    Цена выгоднее, чем при разовом выезде
+                                 </p>
+                                 <p class="info-text">
+                                    Скидка 5% при заказе подбора автомобиля
+                                 </p>
+                              </div>
+                           </div>
+                           <div class="item__price-box">
+                              <span class="price-text">от</span>
+                              <p class="price-number">650</p>
+                              <span class="price-text">&#8381;</span>
+                           </div>
+                           <div class="pick-up pick-up-price ">
+                              <a href="#" class="pick-up__btn">
+                                 Подобрать автомобиль
+                              </a>
+                           </div>
+                           <div class="price-description">
+                              *окончательная цена услуги зависит от стоимости автомобиля
+                           </div>
+                        </li>
+                        <li class="diagnostics-item">
+                           <div class="item__number-box">
+                              <div class="item__number">
+                                 <span class="number__smol">0</span>
+                                 <span class="number__big">3</span>
+                              </div>
+                              <img src="images/servises-auto-3.png" alt="" class="item__number-img">
+                           </div>
+                           <div class="item__info-box">
+                              <div class="info-box__title">
+                                 Подбор автомобиля
+                                 под ключ
+                              </div>
+                              <div class="info-box__text">
+                                 <p class="info-text">
+                                    Экономия вашего личного времени и денег
+                                 </p>
+                                 <p class="info-text">
+                                    Сопровождение всего процесса сделки
+                                 </p>
+                                 <p class="info-text">
+                                    Контроль передачи денег и оформления документов
+                                 </p>
+                                 <p class="info-text">
+                                    Поиск автомобиля до результата
+                                 </p>
+                              </div>
+                           </div>
+                           <div class="item__price-box">
+                              <span class="price-text">от</span>
+                              <p class="price-number">700</p>
+                              <span class="price-text">&#8381;</span>
+                           </div>
+                           <div class="pick-up pick-up-price ">
+                              <a href="#" class="pick-up__btn">
+                                 Подобрать автомобиль
+                              </a>
+                           </div>
+                           <div class="price-description">
+                              *окончательная цена услуги зависит от стоимости автомобиля
+                           </div>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <section class="check">
+            <div class="container">
+               <div class="check__inner">
+                  <div class="title-block ">
+                     <h3 class="sub-title">
+                        что и как мы проверяем
+                     </h3>
+                     <h2 class="title">
+                        проверка автомобиля
+                     </h2>
+                  </div>
+                  <div class="check__slider">
+                     <div class="card-box">
+                        <ul class="card__items">
+                           <li class="card__item">
+                              <div class="card__images">
+                                 <img src="images/slider2/slider-2-motor.jpg" alt="" class="card__img">
+                              </div>
+                              <div class="card__title">
+                                 Двигатель
+                              </div>
+                              <div class="card__description">
+                                 Проверка состояния двигателя
+                                 и замер компрессии
+                              </div>
+                           </li>
+                           <li class="card__item">
+                              <div class="card__images">
+                                 <img src="images/slider2//slider-2-turbine.jpg" alt="" class="card__img">
+                              </div>
+                              <div class="card__title">
+                                 Турбина
+                              </div>
+                              <div class="card__description">
+                                 Проверка состоянии турбины, наддува, наличия поддеков, трещин, запотевания и т.д.
+                              </div>
+                           </li>
+                           <li class="card__item">
+                              <div class="card__images">
+                                 <img src="images/slider2//slider-2-transmission.jpg" alt="" class="card__img">
+                              </div>
+                              <div class="card__title">
+                                 Коробка передач
+                              </div>
+                              <div class="card__description">
+                                 Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.
+                              </div>
+                           </li>
+                           <li class="card__item">
+                              <div class="card__images">
+                                 <img src="images/slider2//slider-2-undercarriag.jpg" alt="" class="card__img">
+                              </div>
+                              <div class="card__title">
+                                 Ходовая часть
+                              </div>
+                              <div class="card__description">
+                                 Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.
+                              </div>
+                           </li>
+                           <li class="card__item">
+                              <div class="card__images">
+                                 <img src="images/slider2//slider-2-body.jpg" alt="" class="card__img">
+                              </div>
+                              <div class="card__title">
+                                 Кузов и ЛКП
+                              </div>
+                              <div class="card__description">
+                                 Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.
+                              </div>
+                           </li>
+                           <li class="card__item">
+                              <div class="card__images">
+                                 <img src="images/slider2//slider-2-tires.jpg" alt="" class="card__img">
+                              </div>
+                              <div class="card__title">
+                                 Шины и диски
+                              </div>
+                              <div class="card__description">
+                                 Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.
+                              </div>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="card-box">
+                        <ul class="card__items">
+                           <li class="card__item">
+                              <div class="card__images">
+                                 <img src="images/slider2/slider-2-battery.jpg" alt="" class="card__img">
+                              </div>
+                              <div class="card__title">
+                                 Аккумулятор
+                              </div>
+                              <div class="card__description">
+                                 Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.
+                              </div>
+                           </li>
+                           <li class="card__item">
+                              <div class="card__images">
+                                 <img src="images/slider2/slider-2-steering.jpg" alt="" class="card__img">
+                              </div>
+                              <div class="card__title">
+                                 Рулевое управление
+                              </div>
+                              <div class="card__description">
+                                 Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.
+                              </div>
+                           </li>
+                           <li class="card__item">
+                              <div class="card__images">
+                                 <img src="images/slider2/slider-2-attachment.jpg" alt="" class="card__img">
+                              </div>
+                              <div class="card__title">
+                                 Навесное оборудование
+                              </div>
+                              <div class="card__description">
+                                 Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.
+                              </div>
+                           </li>
+                           <li class="card__item">
+                              <div class="card__images">
+                                 <img src="images/slider2/slider-2-electronics.jpg" alt="" class="card__img">
+                              </div>
+                              <div class="card__title">
+                                 Электроникa
+                              </div>
+                              <div class="card__description">
+                                 Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.
+                              </div>
+                           </li>
+                           <li class="card__item">
+                              <div class="card__images">
+                                 <img src="images/slider2/slider-2-salon.jpg" alt="" class="card__img">
+                              </div>
+                              <div class="card__title">
+                                 Состояние салона
+                              </div>
+                              <div class="card__description">
+                                 Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.
+                              </div>
+                           </li>
+                           <li class="card__item">
+                              <div class="card__images">
+                                 <img src="images/slider2/slider-2-security.jpg" alt="" class="card__img">
+                              </div>
+                              <div class="card__title">
+                                 Безопасность
+                              </div>
+                              <div class="card__description">
+                                 Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.
+                              </div>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <section class="stages" id="stages">
+            <div class="container">
+               <div class="stages__inner">
+                  <div class="title-block ">
+                     <h3 class="sub-title">
+                        как мы работаем с клиентами
+                     </h3>
+                     <h2 class="title">
+                        Этапы работ
+                     </h2>
+                  </div>
+                  <div class="stages__block">
+                     <ul class="stages__items">
+                        <li class="stages__item">
+                           <div class="stages__images">
+                              <img src="images/stages-contacts.svg" alt="" class="stages__img">
+                           </div>
+                           <div class="stages__description">
+                              Оставьте свои контакты или заполните заявку с параметрами необходимого Вам автомобиля.
+                           </div>
+                        </li>
+                        <li class="stages__item">
+                           <div class="stages__images">
+                              <img src="images/stages-expertise.svg" alt="" class="stages__img">
+                           </div>
+                           <div class="stages__description">
+                              Мы проводим экспертизу выбранных вами вариантов автомобилей.
+                           </div>
+                        </li>
+                        <li class="stages__item">
+                           <div class="stages__images">
+                              <img src="images/stages-technical-expertise.svg" alt="" class="stages__img">
+                           </div>
+                           <div class="stages__description">
+                              Мы проводим техническую и юридическую экспертизу отобранных Вами вариантов.
+                           </div>
+                        </li>
+                        <li class="stages__item">
+                           <div class="stages__images">
+                              <img src="images/stages-talks.svg" alt="" class="stages__img">
+                           </div>
+                           <div class="stages__description">
+                              Проводим переговоры по максимально выгодной сделке и организовываем её.
+                           </div>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <section class="guarantees" id="guarantees">
+            <div class="guarantees__inner">
+               <div class="container">
+                  <div class="title-block ">
+                     <h3 class="sub-title">
+                        немного о нас
+                     </h3>
+                     <h2 class="title guarantees-title">
+                        Гарантии и преимущества
+                     </h2>
+                  </div>
+                  <div class="guarantees-content">
+                     <div class="text__box">
+                        <p class="guarantees__text">
+                           Далеко-далеко за словесными, горами в стране гласных и согласных живут рыбные тексты.
+                           Обеспечивает взобравшись дороге ему заманивший первую ведущими, океана дал строчка моей там
+                           себя
+                           деревни жизни. Коварных рот свой снова встретил.
+                        </p>
+                        <p class="guarantees__text">
+                           Далеко-далеко за словесными, горами в стране гласных и согласных живут рыбные тексты.
+                           Обеспечивает взобравшись дороге ему заманивший первую ведущими, океана дал строчка моей там
+                           себя
+                           деревни жизни. Коварных рот свой снова встретил.
+                           Возвращайся ему путь курсивных живет текстов предупредила на берегу, одна несколько алфавит
+                           . Мир!
+                        </p>
+                     </div>
+                     <div class="guarantees__list">
+                        <ul class="guarantees__items">
+                           <li class="guarantees__item">
+                              <p class="guarantees__item-info guarantees__item-info--transmission">
+                                 Гарантия для всех подобранных автомобилей не старше 7 лет на коробку и ДВС
+                              </p>
+                           </li>
+                           <li class="guarantees__item">
+                              <p class="guarantees__item-info guarantees__item-info--discont">
+                                 Возможность дальнейшего обслуживания со скидкой на проверенном СТО
+                              </p>
+                           </li>
+                           <li class="guarantees__item">
+                              <p class="guarantees__item-info guarantees__item-info--clear">
+                                 Проверим чистоту документов
+                                 и всех предыдущих владельцев
+                              </p>
+                           </li>
+                           <li class="guarantees__item">
+                              <p class="guarantees__item-info guarantees__item-info--ideal ">
+                                 Ищем, пока не выберем идеальный автомобиль для вас
+                              </p>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+
+         <section class="selected-cars" id="selected-cars">
+            <div class="container">
+               <div class="title-block ">
+                  <h3 class="sub-title">
+                     успешные кейсы наших клиентов
+                  </h3>
+                  <h2 class="title ">
+                     Подобранные автомобили
+                  </h2>
+               </div>
+               <div class="selected-cars__inner">
+                  <div class="selected-cars__slider">
+                     <div class="swiper swiper-selected-slider">
+                        <div class="swiper-wrapper">
+
+                           <div class="swiper-slide cars-slide">
+                              <div class="cars-slide__body">
+                                 <div class="body-picture">
+                                    <div class="big-images">
+                                       <img src="images/slider3/big-1.jpg" alt="" class="big-img">
+                                    </div>
+                                    <div class="small-images">
+                                       <div class="small-images__wrapper">
+                                          <img src="images/slider3/small-1.jpg" alt="" class="small-img">
+                                       </div>
+                                       <div class="small-images__wrapper">
+                                          <img src="images/slider3/small-1.jpg" alt="" class="small-img">
+                                       </div>
+                                       <div class="small-images__wrapper">
+                                          <img src="images/slider3/small-1.jpg" alt="" class="small-img">
+                                       </div>
+                                       <div class="small-images__wrapper">
+                                          <img src="images/slider3/small-1.jpg" alt="" class="small-img">
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="body-content">
+                                    <div class="body-content__title">
+                                       Ford Focus Mk2
+                                    </div>
+                                    <div class="specifications-items">
+                                       <div class="specifications-item">
+                                          <p class="specifications-name">
+                                             Кузов:
+                                          </p>
+                                          <p class="specifications-name ">
+                                             Год выпуска:
+                                          </p>
+                                          <p class="specifications-name ">
+                                             Двигатель:
+                                          </p>
+                                          <p class="specifications-name ">
+                                             Коробка передач:
+                                          </p>
+                                          <p class="specifications-name ">
+                                             Бюджет клиента:
+                                          </p>
+                                          <p class="specifications-name specifications-name--color">
+                                             Сумма торга:
+                                          </p>
+                                       </div>
+                                       <div class="specifications-item">
+                                          <p class="specifications-text">
+                                             Хэтчбек
+                                          </p>
+                                          <p class="specifications-text ">
+                                             2012
+                                          </p>
+                                          <p class="specifications-text ">
+                                             1.6d
+                                          </p>
+                                          <p class="specifications-text ">
+                                             механика
+                                          </p>
+                                          <p class="specifications-text ">
+                                             500 000 руб.
+                                          </p>
+                                          <p class="specifications-text specifications-text--color">
+                                             30 000 руб.
+                                          </p>
+                                       </div>
+                                    </div>
+                                    <div class="flaws">
+                                       <div class="flaws__title">
+                                          Недостатки
+                                       </div>
+                                       <div class="flaws__text">
+                                          Большое количество маленьких вмятин
+                                       </div>
+                                    </div>
+                                    <div class="benefits">
+                                       <div class="benefits__title">
+                                          Преимущества
+                                       </div>
+                                       <ul class="benefits__list">
+                                          <li class="benefits__item">
+                                             Оригинальный подтвержденный пробег 266200 км;
+                                          </li>
+                                          <li class="benefits__item">
+                                             На нем ездила семья и
+                                             владелец заботился об автомобиле;
+                                          </li>
+                                          <li class="benefits__item">
+                                             Двигатель и коробка в отличном состоянии;
+                                          </li>
+                                          <li class="benefits__item">
+                                             Кузов без вторичных окрасов;
+                                          </li>
+                                          <li class="benefits__item">
+                                             Оригинальные остекление и оптика;
+                                          </li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+
+
+
+
+                           <div class="swiper-slide cars-slide">
+                              <div class="cars-slide__body">
+                                 <div class="body-picture">
+                                    <div class="big-images">
+                                       <img src="images/slider3/big-1.jpg" alt="" class="big-img">
+                                    </div>
+                                    <div class="small-images">
+                                       <div class="small-images__wrapper">
+                                          <img src="images/slider3/small-1.jpg" alt="" class="small-img">
+                                       </div>
+                                       <div class="small-images__wrapper">
+                                          <img src="images/slider3/small-1.jpg" alt="" class="small-img">
+                                       </div>
+                                       <div class="small-images__wrapper">
+                                          <img src="images/slider3/small-1.jpg" alt="" class="small-img">
+                                       </div>
+                                       <div class="small-images__wrapper">
+                                          <img src="images/slider3/small-1.jpg" alt="" class="small-img">
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="body-content">
+                                    <div class="body-content__title">
+                                       Kia ceed
+                                    </div>
+                                    <div class="specifications-items">
+                                       <div class="specifications-item">
+                                          <p class="specifications-name">
+                                             Кузов:
+                                          </p>
+                                          <p class="specifications-name ">
+                                             Год выпуска:
+                                          </p>
+                                          <p class="specifications-name ">
+                                             Двигатель:
+                                          </p>
+                                          <p class="specifications-name ">
+                                             Коробка передач:
+                                          </p>
+                                          <p class="specifications-name ">
+                                             Бюджет клиента:
+                                          </p>
+                                          <p class="specifications-name specifications-name--color">
+                                             Сумма торга:
+                                          </p>
+                                       </div>
+                                       <div class="specifications-item">
+                                          <p class="specifications-text">
+                                             Хэтчбек
+                                          </p>
+                                          <p class="specifications-text ">
+                                             2012
+                                          </p>
+                                          <p class="specifications-text ">
+                                             1.6d
+                                          </p>
+                                          <p class="specifications-text ">
+                                             механика
+                                          </p>
+                                          <p class="specifications-text ">
+                                             500 000 руб.
+                                          </p>
+                                          <p class="specifications-text specifications-text--color">
+                                             30 000 руб.
+                                          </p>
+                                       </div>
+                                    </div>
+                                    <div class="flaws">
+                                       <div class="flaws__title">
+                                          Недостатки
+                                       </div>
+                                       <div class="flaws__text">
+                                          Большое количество маленьких вмятин
+                                       </div>
+                                    </div>
+                                    <div class="benefits">
+                                       <div class="benefits__title">
+                                          Преимущества
+                                       </div>
+                                       <ul class="benefits__list">
+                                          <li class="benefits__item">
+                                             Оригинальный подтвержденный пробег 266200 км;
+                                          </li>
+                                          <li class="benefits__item">
+                                             На нем ездила семья и
+                                             владелец заботился об автомобиле;
+                                          </li>
+                                          <li class="benefits__item">
+                                             Двигатель и коробка в отличном состоянии;
+                                          </li>
+                                          <li class="benefits__item">
+                                             Кузов без вторичных окрасов;
+                                          </li>
+                                          <li class="benefits__item">
+                                             Оригинальные остекление и оптика;
+                                          </li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+
+                           <div class="swiper-slide cars-slide">
+                              <div class="cars-slide__body">
+                                 <div class="body-picture">
+                                    <div class="big-images">
+                                       <img src="images/slider3/big-1.jpg" alt="" class="big-img">
+                                    </div>
+                                    <div class="small-images">
+                                       <div class="small-images__wrapper">
+                                          <img src="images/slider3/small-1.jpg" alt="" class="small-img">
+                                       </div>
+                                       <div class="small-images__wrapper">
+                                          <img src="images/slider3/small-1.jpg" alt="" class="small-img">
+                                       </div>
+                                       <div class="small-images__wrapper">
+                                          <img src="images/slider3/small-1.jpg" alt="" class="small-img">
+                                       </div>
+                                       <div class="small-images__wrapper">
+                                          <img src="images/slider3/small-1.jpg" alt="" class="small-img">
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="body-content">
+                                    <div class="body-content__title">
+                                       Mercedes
+                                    </div>
+                                    <div class="specifications-items">
+                                       <div class="specifications-item">
+                                          <p class="specifications-name">
+                                             Кузов:
+                                          </p>
+                                          <p class="specifications-name ">
+                                             Год выпуска:
+                                          </p>
+                                          <p class="specifications-name ">
+                                             Двигатель:
+                                          </p>
+                                          <p class="specifications-name ">
+                                             Коробка передач:
+                                          </p>
+                                          <p class="specifications-name ">
+                                             Бюджет клиента:
+                                          </p>
+                                          <p class="specifications-name specifications-name--color">
+                                             Сумма торга:
+                                          </p>
+                                       </div>
+                                       <div class="specifications-item">
+                                          <p class="specifications-text">
+                                             Хэтчбек
+                                          </p>
+                                          <p class="specifications-text ">
+                                             2012
+                                          </p>
+                                          <p class="specifications-text ">
+                                             1.6d
+                                          </p>
+                                          <p class="specifications-text ">
+                                             механика
+                                          </p>
+                                          <p class="specifications-text ">
+                                             500 000 руб.
+                                          </p>
+                                          <p class="specifications-text specifications-text--color">
+                                             30 000 руб.
+                                          </p>
+                                       </div>
+                                    </div>
+                                    <div class="flaws">
+                                       <div class="flaws__title">
+                                          Недостатки
+                                       </div>
+                                       <div class="flaws__text">
+                                          Большое количество маленьких вмятин
+                                       </div>
+                                    </div>
+                                    <div class="benefits">
+                                       <div class="benefits__title">
+                                          Преимущества
+                                       </div>
+                                       <ul class="benefits__list">
+                                          <li class="benefits__item">
+                                             Оригинальный подтвержденный пробег 266200 км;
+                                          </li>
+                                          <li class="benefits__item">
+                                             На нем ездила семья и
+                                             владелец заботился об автомобиле;
+                                          </li>
+                                          <li class="benefits__item">
+                                             Двигатель и коробка в отличном состоянии;
+                                          </li>
+                                          <li class="benefits__item">
+                                             Кузов без вторичных окрасов;
+                                          </li>
+                                          <li class="benefits__item">
+                                             Оригинальные остекление и оптика;
+                                          </li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+
+                           <div class="swiper-slide cars-slide">
+                              <div class="cars-slide__body">
+                                 <div class="body-picture">
+                                    <div class="big-images">
+                                       <img src="images/slider3/big-1.jpg" alt="" class="big-img">
+                                    </div>
+                                    <div class="small-images">
+                                       <div class="small-images__wrapper">
+                                          <img src="images/slider3/small-1.jpg" alt="" class="small-img">
+                                       </div>
+                                       <div class="small-images__wrapper">
+                                          <img src="images/slider3/small-1.jpg" alt="" class="small-img">
+                                       </div>
+                                       <div class="small-images__wrapper">
+                                          <img src="images/slider3/small-1.jpg" alt="" class="small-img">
+                                       </div>
+                                       <div class="small-images__wrapper">
+                                          <img src="images/slider3/small-1.jpg" alt="" class="small-img">
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="body-content">
+                                    <div class="body-content__title">
+                                       Ford Focus Mk2
+                                    </div>
+                                    <div class="specifications-items">
+                                       <div class="specifications-item">
+                                          <p class="specifications-name">
+                                             Кузов:
+                                          </p>
+                                          <p class="specifications-name ">
+                                             Год выпуска:
+                                          </p>
+                                          <p class="specifications-name ">
+                                             Двигатель:
+                                          </p>
+                                          <p class="specifications-name ">
+                                             Коробка передач:
+                                          </p>
+                                          <p class="specifications-name ">
+                                             Бюджет клиента:
+                                          </p>
+                                          <p class="specifications-name specifications-name--color">
+                                             Сумма торга:
+                                          </p>
+                                       </div>
+                                       <div class="specifications-item">
+                                          <p class="specifications-text">
+                                             Хэтчбек
+                                          </p>
+                                          <p class="specifications-text ">
+                                             2012
+                                          </p>
+                                          <p class="specifications-text ">
+                                             1.6d
+                                          </p>
+                                          <p class="specifications-text ">
+                                             механика
+                                          </p>
+                                          <p class="specifications-text ">
+                                             500 000 руб.
+                                          </p>
+                                          <p class="specifications-text specifications-text--color">
+                                             30 000 руб.
+                                          </p>
+                                       </div>
+                                    </div>
+                                    <div class="flaws">
+                                       <div class="flaws__title">
+                                          Недостатки
+                                       </div>
+                                       <div class="flaws__text">
+                                          Большое количество маленьких вмятин
+                                       </div>
+                                    </div>
+                                    <div class="benefits">
+                                       <div class="benefits__title">
+                                          Преимущества
+                                       </div>
+                                       <ul class="benefits__list">
+                                          <li class="benefits__item">
+                                             Оригинальный подтвержденный пробег 266200 км;
+                                          </li>
+                                          <li class="benefits__item">
+                                             На нем ездила семья и
+                                             владелец заботился об автомобиле;
+                                          </li>
+                                          <li class="benefits__item">
+                                             Двигатель и коробка в отличном состоянии;
+                                          </li>
+                                          <li class="benefits__item">
+                                             Кузов без вторичных окрасов;
+                                          </li>
+                                          <li class="benefits__item">
+                                             Оригинальные остекление и оптика;
+                                          </li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+
+                           <div class="swiper-slide cars-slide">
+                              <div class="cars-slide__body">
+                                 <div class="body-picture">
+                                    <div class="big-images">
+                                       <img src="images/slider3/big-1.jpg" alt="" class="big-img">
+                                    </div>
+                                    <div class="small-images">
+                                       <div class="small-images__wrapper">
+                                          <img src="images/slider3/small-1.jpg" alt="" class="small-img">
+                                       </div>
+                                       <div class="small-images__wrapper">
+                                          <img src="images/slider3/small-1.jpg" alt="" class="small-img">
+                                       </div>
+                                       <div class="small-images__wrapper">
+                                          <img src="images/slider3/small-1.jpg" alt="" class="small-img">
+                                       </div>
+                                       <div class="small-images__wrapper">
+                                          <img src="images/slider3/small-1.jpg" alt="" class="small-img">
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="body-content">
+                                    <div class="body-content__title">
+                                       Ford Focus Mk2
+                                    </div>
+                                    <div class="specifications-items">
+                                       <div class="specifications-item">
+                                          <p class="specifications-name">
+                                             Кузов:
+                                          </p>
+                                          <p class="specifications-name ">
+                                             Год выпуска:
+                                          </p>
+                                          <p class="specifications-name ">
+                                             Двигатель:
+                                          </p>
+                                          <p class="specifications-name ">
+                                             Коробка передач:
+                                          </p>
+                                          <p class="specifications-name ">
+                                             Бюджет клиента:
+                                          </p>
+                                          <p class="specifications-name specifications-name--color">
+                                             Сумма торга:
+                                          </p>
+                                       </div>
+                                       <div class="specifications-item">
+                                          <p class="specifications-text">
+                                             Хэтчбек
+                                          </p>
+                                          <p class="specifications-text ">
+                                             2012
+                                          </p>
+                                          <p class="specifications-text ">
+                                             1.6d
+                                          </p>
+                                          <p class="specifications-text ">
+                                             механика
+                                          </p>
+                                          <p class="specifications-text ">
+                                             500 000 руб.
+                                          </p>
+                                          <p class="specifications-text specifications-text--color">
+                                             30 000 руб.
+                                          </p>
+                                       </div>
+                                    </div>
+                                    <div class="flaws">
+                                       <div class="flaws__title">
+                                          Недостатки
+                                       </div>
+                                       <div class="flaws__text">
+                                          Большое количество маленьких вмятин
+                                       </div>
+                                    </div>
+                                    <div class="benefits">
+                                       <div class="benefits__title">
+                                          Преимущества
+                                       </div>
+                                       <ul class="benefits__list">
+                                          <li class="benefits__item">
+                                             Оригинальный подтвержденный пробег 266200 км;
+                                          </li>
+                                          <li class="benefits__item">
+                                             На нем ездила семья и
+                                             владелец заботился об автомобиле;
+                                          </li>
+                                          <li class="benefits__item">
+                                             Двигатель и коробка в отличном состоянии;
+                                          </li>
+                                          <li class="benefits__item">
+                                             Кузов без вторичных окрасов;
+                                          </li>
+                                          <li class="benefits__item">
+                                             Оригинальные остекление и оптика;
+                                          </li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+
+                        </div>
+                     </div>
+                  </div>
+                  <div class="slider__pagination-box">
+                     <div class="swiper-pagination"></div>
+                  </div>
+                  <div class="slider__buttons">
+                     <div class="swiper-button-prev"></div>
+                     <div class="swiper-button-next"></div>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <section class="question" id="application">
+            <div class="container">
+               <div class="title-block ">
+                  <h3 class="sub-title">
+                     заполнение формы заявки на подбор автомобиля
+                  </h3>
+                  <h2 class="title">
+                     Расскажите, какой автомобиль ищете?
+                  </h2>
+               </div>
+               <div class="question__inner">
+                  <form action="send.php" method="POST" class="form">
+                     <div class="form__block">
+                        <input class="form-model" type="text" placeholder="Марка/модель/тип кузова автомобиля"
+                           name="model">
+                        <input type="text" class="user-name" placeholder="Ваше имя" name="name">
+                        <input type="text" class="user-phone" placeholder="Телефон" name="phone">
+                        <select class="multi-default" name="budget">
+                           <option class="budget-option" value="">Бюджет до </option>
+                           <option class="budget-option" value="до 100 000 руб.">до 100 000 руб.</option>
+                           <option class="budget-option" value="до 200 000 руб.">до 200 000 руб.</option>
+                           <option class="budget-option" value="до 300 000 руб.">до 300 000 руб.</option>
+                           <option class="budget-option" value="до 500 000 руб.">до 500 000 руб.</option>
+                           <option class="budget-option" value="до 600 000 руб.">до 600 000 руб.</option>
+                        </select>
+                        <select class="multi-default" name="years">
+                           <option value="">Год выпуска </option>
+                           <option value="от 2021">от 2021</option>
+                           <option value="от 2020">от 2020</option>
+                           <option value="от 2019">от 2019</option>
+                           <option value="от 2018">от 2018</option>
+                           <option value="от 2017">от 2017</option>
+                        </select>
+                        <input class="form-comment" type="text" placeholder="Комментарии/например цвет" name="comment">
+                        <select class="multi-default" name="transmission">
+                           <option value="">Тип коробки передач </option>
+                           <option value="автомат">автомат</option>
+                           <option value="механика">механика</option>
+                           <option value="робот">робот</option>
+                        </select>
+                        <select class="multi-default" name="enge">
+                           <option value="">Тип двигателя </option>
+                           <option value="бензин">бензин</option>
+                           <option value="дизель">дизель</option>
+                           <option value="гибрид">гибрид</option>
+                        </select>
+                        <div class="personal-box">
+                           <div class="personal-data">
+                              <div class="personal-text">
+                                 Нажимая кнопку, я соглашаюсь с условиями обработки
+                                 <a href="#" class="personal-link">Персональных Данных</a>
+                              </div>
+                           </div>
+                           <div class=" pick-up-form ">
+                              <button class="auto-btn pick-up__btn" type="submit">
+                                 Подобрать автомобиль
+                              </button>
+                           </div>
+                        </div>
+                     </div>
+                  </form>
+               </div>
+            </div>
+
+            <div class="overley">
+               <div class="modal" id="thanks">
+                  <div class="modal__close"></div>
+                  <div class="modal__subtitle">Спасибо!</div>
+                  <div class="modal__description">Ваше сообщение отправлено.</div>
+               </div>
+            </div>
+
+
+
+         </section>
+
+      </main>
+
+
+      <footer class="footer" id="contacts">
+         <div class="container">
+            <div class="title-block ">
+               <h3 class="sub-title">
+                  наши контакты
+               </h3>
+               <h2 class="title footer-title">
+                  контактная информация
+               </h2>
+            </div>
+            <div class="footer__inner">
+               <div class="footer__map">
+                  <div id="map" style=" height:370px;"></div>
+               </div>
+
+               <div class="footer__content">
+                  <div class="content-item__title">
+                     <div class="footer__content-title">
+                        Телефон:
+                     </div>
+                     <div class="footer__content-title content-title__email">
+                        E-mail:
+                     </div>
+                     <div class="footer__content-title">
+                        Наш адрес:
+                     </div>
+                     <div class="footer__content-title footer__content-messenger ">
+                        Мессенджеры:
+                     </div>
+                     <div class="footer__content-title footer__content-social">
+                        Мы в соц.сетях:
+                     </div>
+                  </div>
+                  <div class="content-item__text">
+                     <div class="footer__content-text">
+                        <a href="tel:88888888888" class="footer__content-link">
+                           +8 888 888 88 88
+                        </a>
+                     </div>
+                     <div class="footer__content-text">
+                        <a href="mailto:pasha@email.com" class="footer__mail-link">
+                           pasha@email.com
+                        </a>
+                     </div>
+                     <div class="footer__content-text footer__content-text-city">
+                        Санкт-Петербург , ул.Морская 19
+                     </div>
+                     <div class="footer__content-text content-text__messengers">
+                        <div class="footer__content-messengers">
+                           <a href="#" class="footer-messengers__link">
+                              <img src="images/icons/messenger-whatsap.svg" alt="" class="footer-messengers__img">
+                           </a>
+                        </div>
+                        <div class="footer__content-messengers">
+                           <a href="#" class="footer-messengers__link">
+                              <img src="images/icons/messenger-telegram.svg" alt="" class="footer-messengers__img">
+                           </a>
+                        </div>
+                        <div class="footer__content-messengers">
+                           <a href="#" class="footer-messengers__link">
+                              <img src="images/icons/messenger-whatsap.svg" alt="" class="footer-messengers__img">
+                           </a>
+                        </div>
+
+                     </div>
+                     <div class="footer__content-text content-text__social">
+                        <div class="footer__content-social">
+                           <a href="#" class="footer-social__link">
+                              <img src="images/icons/social-icons-faceboock.svg" alt="" class="footer-social__img">
+                           </a>
+                        </div>
+                        <div class="footer__content-social">
+                           <a href="#" class="footer-social__link">
+                              <img src="images/icons/social-icons-instagram.svg" alt="" class="footer-social__img">
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <div class="copyright">
+               <span class="company-name">© 2022 </span>
+               <div class="confidentiality-policy">
+                  Политика конфиденциальности
+               </div>
+            </div>
+         </div>
+      </footer>
+
+
+   </div>
+
+
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   <script src="js/swiper-bundle.min.js"></script>
+   <script src="js/choices.min.js"></script>
+   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""></script>
+   <script src="js/main.min.js"></script>
+</body>
+
+</html>
